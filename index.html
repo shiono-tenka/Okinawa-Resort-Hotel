@@ -28,19 +28,20 @@
             <h1>Okinawa Resort Stay</h1>
             <div class="scrollAnimation">
                 <p class="scroll">SCROLL <br>
-                <span></span></p>
+                    <span></span>
+                </p>
             </div>
         </div>
-            
-            
-        
-        
+
+
     </header>
     <main>
+        <!-- 変更なし -->
         <section class="reserve">
             <a href="#">ご予約</a>
         </section>
-        <section class="sec3">
+        <!-- 変更あり -->
+        <!-- <section class="sec3">
             <div class="sec3_bg">
                 <p><img src="./css/img/sec3背景.png" alt=""></p>
             </div>
@@ -52,36 +53,45 @@
                         貴方に、唯一無二の非日常を体験していただくこと </p>
                 </div>
             </div>
-        </section>
-        <section class="sec5">
-            <div class="sec5_bg">
-                <p><img src="./css/img/sec5背景.png" alt=""></p>
+        </section> -->
+        <section class="message">
+            <div class="video">
+                <video autoplay muted loop src="css/img/沖縄リゾートホテル用動画.mp4"></video>
             </div>
         </section>
-        <section class="sec6">
-            <div>
+
+        <section class="welcome">
+            <div class="postcard">
                 <h2><span>“ Okinawa Resort Stay ”</span>へようこそ</h2>
                 <p>写真をみた時に、 <br>
                     「どこの離島だろう？」
                     と思ってしまうような<br>
-                    プライベートビーチ感満載な当リゾート。</p>
-                <p>
+                    プライベートビーチ感満載な当リゾート。
+                    <br><br>
                     沖縄本島にありながら、<br>
-                    まだ観光名所としてはあまり知られていません。</p>
-                <p>
+                    まだ観光名所としてはあまり知られていません。
+                    <br><br>
                     だからこそ、<br>
                     -自分自身と向き合う時間を過ごす場所- <br>
-                    にぴったりなのです。</p>
-                <p>
+                    にぴったりなのです。
+                    <br><br>
                     海辺のリゾートに求める全てを凝縮させたこの敷地で、
                     <br>心ゆくままにお過ごしくださいませ。
                 </p>
             </div>
-
         </section>
+
+        <!-- 変更あり -->
         <article id="News">
-            <h3>お知らせ</h3>
-            <div>
+            <div class="sns">
+                <ul>
+                    <li><a href="#"><img src="css/img/Facebook_Logo_Secondary.png" alt=""></a></li>
+                    <li><a href="#"><img src="css/img/Instagram_Glyph_White.png" alt=""></a></li>
+                    <li><a href="#"><img src="css/img/logo-white.png" alt=""></a></li>
+                </ul>
+            </div>
+            <h3>NEWS</h3>
+            <div class="newsTxst">
                 <dl>
                     <dt><time datetime="2024-07-01">2024/7/1</time></dt>
                     <dd> 全客室リニューアル！</dd>
@@ -94,15 +104,35 @@
 
         </article>
         <section id="room">
-            <h3>客室のご紹介</h3>
-            <div class="roomType">
-                <ul>
-                    <li><a href="#">客室typeA</a></li>
-                    <li><a href="#">客室typeB</a></li>
-                    <li><a href="#">客室typeC</a></li>
-                    <li><a href="#">貸切コテージ</a></li>
-                </ul>
+            <div class="roomTitle">
+                <h3>客室のご紹介</h3>
             </div>
+            <div class="roomDetail">
+                <div class="slide-container">
+                    <div class="slide-wrapper">
+                        <a href="#"><img class="slide" src="css/img/typeA.jpg" alt="typeA"></a>
+                        <a href="#"><img class="slide" src="css/img/typeB.jpg" alt="typeB"></a>
+                        <a href="#"><img class="slide" src="css/img/typeC.jpg" alt="typeC"></a>
+                        <a href="#"><img class="slide" src="css/img/コテージ.jpg" alt="貸切コテージ"></a>
+                    </div>
+                    <div class="slide-wrapper">
+                        <a href="#"><img class="slide" src="css/img/typeA.jpg" alt="typeA"></a>
+                        <a href="#"><img class="slide" src="css/img/typeB.jpg" alt="typeB"></a>
+                        <a href="#"><img class="slide" src="css/img/typeC.jpg" alt="typeC"></a>
+                        <a href="#"><img class="slide" src="css/img/コテージ.jpg" alt="貸切コテージ"></a>
+                    </div>
+                    <div class="slide-wrapper">
+                        <a href="#"><img class="slide" src="css/img/typeA.jpg" alt="typeA"></a>
+                        <a href="#"><img class="slide" src="css/img/typeB.jpg" alt="typeB"></a>
+                        <a href="#"><img class="slide" src="css/img/typeC.jpg" alt="typeC"></a>
+                        <a href="#"><img class="slide" src="css/img/コテージ.jpg" alt="貸切コテージ"></a>
+                    </div>
+                </div>
+                <div class="detail">
+                    <a href="#">詳細はこちらから</a>
+                </div>
+            </div>
+
 
         </section>
         <section id="restaurant">
@@ -140,16 +170,36 @@
         <section class="reserve">
             <a href="#">ご予約</a>
         </section>
-        <section class="contact">
-            <h4>お問い合わせ先 </h4><br>
-            <p>
-                電話 ：<a href="#"> 000-XXX-YYY</a> <br>
-                Email：<a href="#"> Okinawa.resort.stay@zzz.com</a>
-            </p>
-        </section>
     </main>
     <footer>
-        <p><small>(C)2022 Okinawa Resort Stay</small></p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#News">News</a></li>
+                <li><a href="#room">Room</a></li>
+                <li><a href="#restaurant">Restaurant</a></li>
+                <li><a href="#access">Access</a></li>
+            </ul>
+        </nav>
+        <div class="footerContents">
+            <div class="contact">
+                <h4>お問い合わせ先 </h4><br>
+                <p>
+                    電話 ：<a href="#"> 000-XXX-YYY</a> <br>
+                    Email：<a href="#"> Okinawa.resort.stay@zzz.com</a>
+                </p>
+            </div>
+            <div class="sns">
+                <ul>
+                    <li><a href="#"><img src="css/img/Facebook_Logo_Secondary.png" alt=""></a></li>
+                    <li><a href="#"><img src="css/img/Instagram_Glyph_White.png" alt=""></a></li>
+                    <li><a href="#"><img src="css/img/logo-white.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copy">
+            <small>(C)2022 Okinawa Resort Stay</small>
+        </p>
     </footer>
 </body>
 

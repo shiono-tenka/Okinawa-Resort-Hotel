@@ -21,31 +21,40 @@
         transform-origin: bottom;
     }
 }
+
 @keyframes fade-in {
     from {
         opacity: 0;
-      }
-      to {
+    }
+
+    to {
         opacity: 1;
-      }
+    }
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-size: 16px;
-    font-family: 'arial', 'Hiragino Sans', 'Meiryo', sans-serif;
+    font-family: "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    ;
     color: #000000;
 }
 
 h3 {
     font-size: 24px;
     text-align: center;
+    padding-top: 56px;
+    padding-bottom: 32px;
 }
 
 /* header----------------- */
 header img {
     width: 100%;
+    height: 80vh;
+    object-fit: cover;
 }
 
 header .container {
@@ -115,7 +124,7 @@ header ul li a:hover::after {
 }
 
 header h1 {
-    background-color: #78A6A7;
+    background-color: rgba(120, 166, 167, 0.6);
     color: #ffffff;
     font-size: 56px;
     font-family: "Inspiration", serif;
@@ -157,144 +166,237 @@ header h1 {
     /* 影を0pxにする */
 }
 
-/* sec3-------------------------------- */
-
-.sec3_bg img {
+/* messaage-------------------------------- */
+/* .sec3_bg img {
     width: 100%;
     height: 500px;
     object-fit: cover;
     animation-name: fade-in;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-}
-
-/* sec4------------------- */
-
-/* 親要素⬇︎ */
-.sec4 {
-    background-color: #78A6A7;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* 子要素⬇︎ */
-.sec4 .txt_bg {
-    width: 700px;
-    height: 200px;
-    border-radius: 20px;
-    background-color: #ffffff;
-    display: table;
-}
-
-/* 孫要素⬇︎ */
-.sec4_txt {
-    font-size: 24px;
-    line-height: 1.7;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.sec4_txt span {
-    font-family: "Inspiration", serif;
-    font-size: 30px;
-    vertical-align: 10%;
-    margin: 0 10px;
-}
-
-/* sec5---------------------------- */
-.sec5_bg img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    animation-name: fade-in;
-    animation-timeline: view();
-    animation-range: entry;
-    
-}
-
-/* sec6------------------- */
-
-.sec6 {
-    width: 550px;
-    height: 600px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sec6 div h2 {
-    font-size: 32px;
-    margin: 56px auto 32px;
-}
-
-.sec6 div h2 span {
-    font-family: "Inspiration", serif;
-    font-size: 40px;
-    vertical-align: 10%;
-    margin: 0 10px;
-}
-
-.sec6 div p {
-    font-size: 16px;
-    margin-bottom: 24px;
-    line-height: 1.7;
-}
-/* お知らせ------------------- */
-article {
-    height: 400px;
-    background: url(css/img/sec7背景.png) no-repeat center bottom/cover;
-    background-position: center bottom 30%;
+} */
+.message {
     position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.video {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: 1;
 }
 
-article::after {
-    content: "";
+.video>video {
     position: absolute;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-45%, -50%);
+}
+
+/* sec_welcome--------------------- */
+.welcome {
+    height: 700px;
+    background: url(css/img/sec5背景.png) no-repeat center center/cover;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.postcard {
+    width: 700px;
+    height: 560px;
     background-color: #ffffff;
-    opacity: 0.3;
-}
-
-article>h3 {
-    padding-top: 56px;
-    padding-bottom: 32px;
-    text-decoration: underline;
+    border-radius: 30px;
+    margin: 0 auto;
     position: relative;
-    z-index: 3;
-    color: #000000;
 }
 
-article>div {
+.postcard h2::before {
+    content: url(css/img/ハイビスカス.png);
+    display: inline-block;
+    transform: scale(-0.25, 0.25);
+    position: absolute;
+    left: -420px;
+    bottom: -60px;
+}
+
+.postcard h2::after {
+    content: url(css/img/スタンプ.png);
+    display: inline-block;
+    transform: scale(0.15);
+    position: absolute;
+    top: -15px;
+    right: -380px;
+}
+
+.postcard h2 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 32px;
+
+}
+
+.postcard span {
+    font-family: "Inspiration", serif;
+    font-size: 40px;
+    vertical-align: 10%;
+}
+
+.postcard p {
     width: 400px;
     margin: 0 auto;
-    line-height: 2;
-    position: relative;
-    z-index: 3;
-    color: #000000;
+    margin-top: 30px;
+    line-height: 1.5;
 }
 
-article div dd {
-    margin-left: 1em;
+/* News----------------- */
+
+article {
+    margin: 56px 0;
+    height: 250px;
+    background-color: #78A6A7;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    display: flex;
 }
+
+article .sns {
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+article .sns li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+article h3 {
+    flex-basis: 20%;
+    text-decoration: underline;
+    line-height: 135px;
+    text-align: center;
+    margin-right: 65px;
+}
+
+article .newsTxst {
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+article .newsTxst dl {
+    width: 500px;
+}
+
+article .newsTxst dt {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+article .newsTxst dd {
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding-left: 1em;
+    border-bottom: 1px solid;
+}
+
+article .sns img {
+    height: 30px;
+}
+
 /* 客室------------------- */
 #room {
-    height: 500px;
-    background: url(css/img/sec8背景.png) no-repeat center center/cover;
-    animation-name: fade-in;
-    animation-timeline: view();
-    animation-range: entry;
+    height: 795px;
+    background: url(css/img/sec8背景.png) no-repeat top center/cover;
 }
 
 #room>h3 {
+    padding-top: 80px;
+}
+
+.slide-container {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: #ffffff;
+    height: 600px;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.roomDetail {
+    position: relative;
+}
+
+.detail {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 40px;
+    background-color: #B7E1E2;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 30px;
+    border: 1px solid #000000;
+    transition: .5s ease-in-out;
+}
+
+.detail:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.detail a {
+    display: block;
+    letter-spacing: 0.3em;
+}
+
+.slide-wrapper {
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+    animation: slide-flow 50s infinite linear 1s both;
+}
+
+.slide {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+    border: 20px solid #ffffff;
+    padding-top: 50px;
+}
+
+@keyframes slide-flow {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.slide-wrapper img:hover {
+    opacity: 0.7;
+}
+
+/* #room>h3 {
     padding-top: 56px;
     padding-bottom: 32px;
 }
@@ -331,15 +433,15 @@ article div dd {
 .roomType ul li:hover {
     top: 9px;
     /* 元の位置から9px分下がる */
-    box-shadow: 0 0 #4C0F13;
-    /* 影を0pxにする */
-}
+/* box-shadow: 0 0 #4C0F13; */
+/* 影を0pxにする */
 
-.roomType ul li a {
+
+/* .roomType ul li a {
     display: block;
     font-size: 18px;
     letter-spacing: 0.2em;
-}
+} */
 
 /* レストラン------------------- */
 #restaurant {
@@ -397,7 +499,7 @@ article div dd {
 
 /* アクセス------------------- */
 #access {
-    height: 300px;
+    height: 350px;
     background: url(css/img/sec10背景.png) no-repeat center center/cover;
     background-position: center bottom 30%;
     animation-name: fade-in;
@@ -424,26 +526,44 @@ article div dd {
 #access div .coment {
     text-decoration: underline;
 }
-/* 問い合わせ------------------- */
-.contact {
-    height: 100px;
-    width: 300px;
-    margin: 0 auto;
-}
-
-.contact h4 {
-    font-size: 18px;
-    text-align: center;
-    padding-top: 12px;
-}
-
-.contact p {
-    font-size: 14px;
-}
 
 /* footer------------------- */
 footer {
+    height: 300px;
     background-color: #78A6A7;
-    height: 25px;
-    text-align: right;
+    color: #ffffff;
+    position: relative;
+    z-index: 99;
+}
+
+footer nav ul {
+    width: 40%;
+    padding-top: 56px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer nav ul li:hover {
+    color: #000000;
+}
+.footerContents{
+    height: 120px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+footer .sns ul {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .sns img {
+    height: 30px;
+}
+.copy {
+    text-align: center;
+    padding-top: 80px;
 }
