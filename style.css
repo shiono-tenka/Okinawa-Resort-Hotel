@@ -167,14 +167,7 @@ header h1 {
 }
 
 /* messaage-------------------------------- */
-/* .sec3_bg img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    animation-name: fade-in;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-} */
+
 .message {
     position: relative;
     width: 100%;
@@ -395,53 +388,6 @@ article .sns img {
 .slide-wrapper img:hover {
     opacity: 0.7;
 }
-
-/* #room>h3 {
-    padding-top: 56px;
-    padding-bottom: 32px;
-}
-
-.roomType {
-    width: 800px;
-    height: 350px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
-
-.roomType ul {
-    height: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-}
-
-.roomType ul li {
-    width: 300px;
-    height: 80px;
-    background-color: #B7E1E2;
-    border-radius: 30px;
-    box-shadow: 0 9px #496666;
-    text-align: center;
-    line-height: 80px;
-    position: relative;
-    top: 0;
-    transition: .2s ease-in-out;
-}
-
-.roomType ul li:hover {
-    top: 9px;
-    /* 元の位置から9px分下がる */
-/* box-shadow: 0 0 #4C0F13; */
-/* 影を0pxにする */
-
-
-/* .roomType ul li a {
-    display: block;
-    font-size: 18px;
-    letter-spacing: 0.2em;
-} */
 
 /* レストラン------------------- */
 #restaurant {
